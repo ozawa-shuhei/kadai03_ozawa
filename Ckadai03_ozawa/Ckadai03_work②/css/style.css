@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #4c4c4c;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+
+/* ここから下記述 */
+
+body{
+    background-color: #eeeeee;
+}
+
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+     /* justify-content: space-between; */       
+     /* ↑が効きません */
+}
+
+.card-list {
+    /* justify-content: space-around; */
+    /* ↑で試しても上手くできませんでした。なので、下のmarginで対応してます。 */
+    margin: 20px;
+    margin-right: none;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color:green;
+}
+
+h2 {
+    color:green;
+    margin-top: 10px;   
+    margin-left: 10px;
+    border-left: 5px solid green;
+}
+
+p{
+    margin: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .content {
+        display: block;
+    }
+
+    .card-list {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
+    
